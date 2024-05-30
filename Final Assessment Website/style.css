@@ -1,0 +1,183 @@
+@import url("https://fonts.googleapis.com/css2?family=Italiana&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Italianno&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+body {
+  margin: 0;
+}
+
+h2 {
+  font-size: 20px;
+  font-weight: 100;
+  font-family: "Times New Roman", Times, serif;
+}
+
+h4 {
+  font-family: "Italianno";
+  font-weight: normal;
+  font-size: 23px;
+}
+
+h6, p {
+  font-family: "Times New Roman", Times, serif;
+}
+
+p {
+  font-size: 20px;
+  letter-spacing: 1px;
+  line-height: 23px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+header {
+  background-color: #FCFBF4;
+  width: 100%;
+  display: inline-flex;
+  align-items: center;
+}
+header img {
+  margin: 0px 12px;
+}
+header .header_texts {
+  color: #000;
+  font-family: "Italiana", sans-serif;
+  margin: 0px 60px 0px auto;
+  display: flex;
+  flex-direction: row;
+  gap: 110px;
+  align-items: center;
+}
+header .header_texts .button {
+  width: 100px;
+  height: 26px;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  background-color: #314E52;
+  border-radius: 20px;
+  margin-left: 30px;
+  text-align: center;
+  padding-top: 0.5em;
+}
+header .header_texts h3 {
+  color: #233a3d;
+  font-size: 18px;
+}
+header .header_texts .highlight_texts {
+  color: #db9f55;
+}
+header .header_texts .button:hover {
+  background-color: #db9f55;
+  font-size: 17px;
+}
+header .header_texts h3:hover {
+  color: #db9f55;
+}
+
+.parallax {
+  position: relative;
+  overflow: hidden;
+  background-color: #314E52;
+  background-repeat: repeat-x;
+  height: 200px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.parallax img {
+  height: 90%;
+  width: 125px;
+}
+.parallax .text {
+  position: absolute;
+  background-color: rgba(219, 159, 85, 0.644);
+  width: 390px;
+  height: 30px;
+  padding: 0.5em;
+}
+.parallax .text h2 {
+  font-weight: normal;
+  font-size: 28px;
+  color: #FCFBF4;
+  margin: 0;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  padding: 30px 80px;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  background-color: #FCFBF4;
+}
+footer .left_footer {
+  font-family: "Italiana", sans-serif;
+  border-right: 3px solid #F2A154;
+  height: 260px;
+  padding-right: 170px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+footer .left_footer h3 {
+  color: #233a3d;
+  font-size: 18px;
+  margin: 12px 0;
+}
+footer .mid_footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0px 60px;
+}
+footer .mid_footer h4 {
+  margin-top: -20px;
+  margin-bottom: 8px;
+  font-size: 26px;
+  letter-spacing: 1px;
+  font-weight: 500;
+}
+footer .mid_footer .socials {
+  display: flex;
+  flex-direction: row;
+  gap: 70px;
+}
+footer .mid_footer .socials img {
+  width: 32px;
+}
+footer .right_footer {
+  border-left: 3px solid #F2A154;
+  height: 260px;
+  padding-left: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+footer .right_footer p {
+  margin: 0;
+  font-family: "Italianno";
+  font-weight: 400;
+  font-size: 30px;
+}
+footer .right_footer .button-contact {
+  font-family: "Italiana", sans-serif;
+  margin-top: 50px;
+  background-color: #314E52;
+  color: #FCFBF4;
+  width: 150px;
+  padding: 9px 0;
+  border: 1px solid #314E52;
+  font-size: 14px;
+  letter-spacing: 1px;
+  font-weight: 600;
+  text-align: center;
+}/*# sourceMappingURL=style.css.map */

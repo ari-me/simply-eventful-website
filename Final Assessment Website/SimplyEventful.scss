@@ -1,0 +1,1414 @@
+/*Color Codes*/
+$white: #FCFBF4;
+$gold: #F2A154;
+$lighergold: #db9f55;
+$blue: #314E52;
+$silver: #a6a49d;
+
+/*CSS for JavaScript Code to let text pop-up when visible on screen through scroll*/
+.visible {
+	opacity: 0;
+	transform: translateY(30px);
+	transition: all 1s ease-out;
+}
+.pVisible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/*Single-Element Codes*/
+a{text-decoration: none;}
+h1{
+    font-size: 62px;
+    font-weight: 600;
+    letter-spacing: 8px;
+}
+h2{
+    font-size: 20px;
+    font-weight: 100;
+}
+h3{
+    font-size: 18px;
+    color: #233a3d;
+    padding-top: 2px;
+}
+h4{
+    font-family: 'Italianno';
+    font-size: 23px;
+    font-weight: normal;
+}
+h5{
+    font-family: 'Verdana';
+    font-size: 18px;
+    font-weight: 100;
+    line-height: 23px;
+    letter-spacing: 1px; 
+}
+p{
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: 1px; 
+}
+
+hr{
+    width: 60px;
+    margin: 25px;
+    border: 1px solid $gold;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Italiana';
+}
+body{background-color: $white;} 
+
+/*HEADER CODES*/
+header{
+    background-color: $white;
+    padding: 0px 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .header_texts{
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        gap: 11%;
+        h3:hover{color: $lighergold;}
+        .highlight_texts{color: $lighergold;}
+    }
+    button{
+        width: 100px;
+        height: 26px;
+        background-color: $blue;
+        color:white;
+        font-size: 16px;
+        font-style: bold;
+        border-radius: 20px;
+    }
+    button:hover{
+        background-color: $lighergold;
+        font-size: 17px;
+    }
+}
+
+/*FOOTER CODES*/
+.parallax{
+    height: 125px;
+    width: 100%;
+    background-color: $blue;
+    background-repeat: repeat-x;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+    img{
+        height:84%;
+        width: 86px;
+        @media only screen and (min-width: 1550px) {
+            width: 7%;
+        }
+        @media only screen and (max-width: 1300px) {
+            width: 6%;
+        }
+    }  
+    .text{
+        width: 390px;
+        height: 30px;
+        position: absolute;
+        background-color: $gold;
+        opacity: 70%;
+        h2{
+            font-size: 27px;
+            color: $white;
+        }
+    }
+}
+footer{
+    background-color: $white;
+    margin: 30px 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
+    .left_footer{
+        height: 260px;
+        padding-right: 10%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 22px;
+        border-right: 3px solid $gold;
+        h3:hover{color: $gold;}
+    }
+    .mid_footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0px 2%;
+        h4{
+            margin-top: -20px;
+            margin-bottom: 8px;
+            font-size: 26px;
+            font-weight: 500;
+            letter-spacing: 1px;
+        }
+        .socials{
+            display: flex;
+            gap: 70px;
+            img{width: 32px;}
+            .instagram:hover{content: url('insta_color.png');}
+            .facebook:hover{content: url('facebook_color.png');}
+            .gmail:hover{content: url('gmail_color.png');}
+        }
+    }
+    .right_footer{
+        height: 260px;
+        padding-left: 100px;
+        border-left: 3px solid $gold;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        p{
+            font-family: 'Italianno';
+            font-size: 30px;
+            font-weight: 400;
+        }
+        button{
+            width: 150px;
+            height: 37px;
+            background-color: $blue;
+            margin-top: 50px;
+            border: 1px solid $blue;
+            font-size: 14px;
+            font-weight: 600;
+            letter-spacing: 1px;
+            color: $white;
+        }
+        button:hover{
+            background-color: $lighergold;
+            border: 0px;
+        }
+    }
+    @media only screen and (max-width: 1350px) {
+        .right_footer{display:none;}
+        .left_footer{display:none;}
+    }
+}
+
+
+/*HOME PAGE*/
+/*Header Home Page*/
+.header_home{
+    height: 165px;
+    background-color: $white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .header_texts{
+        display: inline-flex;
+        justify-content: space-between;
+        gap:10%;
+        margin-top:-10px;
+        padding-bottom: 10px;
+        padding-left: 17px;
+        button{
+            width:100px;
+            height:26px;
+            font-size: 16px;
+            font-style: bold;
+            color:white;
+            background-color: $blue;
+            border-radius:20px;
+        }
+        button:hover{
+            background-color: $lighergold;
+            font-size: 17px;
+        }
+    }
+}
+/*Body 1 Part of Home Page*/
+.body1_home{
+    background-image: url('body1_background.jpg');
+    background-size: cover;
+    height: 590px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    color:white;
+    img{
+        margin-top: auto;
+    }
+    h6{
+        font-weight: normal;
+        font-size: 15px;
+        margin-top: auto;
+        margin-bottom: 10px;
+    }
+    p{
+        font-weight: 100;
+        text-align: center;
+    }
+}
+/*2nd Body of Home Page: Introduction Content*/
+.body2_home{
+    padding: 50px 150px;
+    background-color: $white;
+    .body2_content{
+        background-color: $blue;
+        padding-top: 85px;
+        padding-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: $white;
+        gap:4px;
+        h5{margin-top: 10px;}
+        h4{margin-top: 120px;}
+    }
+}
+/*Part 3 of the Home Page: Information linking Get in Touch and About Page*/
+.body3_home{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 400px 400px;
+    .image1{
+        background-image: url('people1.jpg');
+        background-size: cover;
+    }
+    .image2{
+        background-image: url('people2.jpg');
+        background-size: cover;
+    }
+    .content1, .content2{
+        background-color: $white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+        text-align: center;
+        h1{
+            font-size: 34px;
+            color: $blue;
+        }
+        button{
+            width: 125px;
+            height: 28px;
+            background-color: $gold;
+            border: 1px solid $white;
+            border-radius: 10px;
+            color: $white;
+            font-size: 17px;
+            font-weight: bold;
+            margin-top: 40px;
+        }
+        button:hover{
+            width: 128px;
+            height: 30px;
+            font-size: 18px;
+        }
+    }
+    .content2{
+        gap: 4px;
+        padding-top: 10px;
+    }
+}
+/*Part 4 of Home Page: Link to Portfolio Page*/
+.body4_home{
+    background-color: $white;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;  
+    img{
+        border: 1px solid black;
+        box-shadow: 2px 2px 5px black;
+    }
+    h1, h2{color: $blue;}  
+    h1{
+        font-size: 30px;
+        letter-spacing: 2px;
+    }
+    h2{font-size: 18px;}
+    .body4_content{
+        padding-top: 20px;
+        display: flex;
+        gap: 140px;
+        h3{
+            margin-top: 6px;
+            margin-bottom: 15px;
+            color: black;
+            font-size: 20px;
+            letter-spacing: 2px;
+        }
+        button{
+            background-color: $blue;
+            width: 102px;
+            height: 25px;
+            border: 1px solid $white;
+            color: $white;
+            font-weight: 600;
+            font-size: 12px;
+        }
+        button:hover{
+            background-color: $lighergold;
+        }
+        img:hover{
+            border: 1px solid $lighergold;
+            box-shadow: 1px 1px 6px $gold;
+        }
+    }
+}
+/*5th Part of Home Page: Contact Page*/
+.body5_home{
+    position: relative;
+    /*Overlay Polaroid Images*/
+    .overlay_image{
+        position: absolute;
+        @media only screen and (min-width: 1550px) {margin-left: 5%;}
+        @media only screen and (max-width: 1280px){display:none;}
+        .polaroid{
+            background-color: $white;
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border: 1px solid black;
+            img{
+                width: 230px;
+                height: 230px;
+                border: 1px solid black;
+            }
+        }
+        .polaroid1{
+            padding: 15px 15px 60px 15px;
+            margin-top: 30px;
+            margin-left: 120px;
+            transform: rotate(1deg);
+            z-index: 1;
+        }
+        .polaroid2{
+            margin-top: 185px;
+            padding: 15px 15px 15px 15px;
+            z-index: 3;
+            transform: rotate(-16deg);
+            p{
+                margin-top: 10px;
+                font-family: 'Monotype Corsiva';
+            }
+        }
+        .polaroid3{
+            padding: 15px 15px 20px 15px;
+            margin-top: 260px;
+            margin-left: 250px;
+            transform: rotate(20deg);
+            z-index: 2;
+            p{
+                margin-top: 20px;
+                font-size: 26px;
+                font-family: 'Bradley Hand ITC';
+                font-weight: 600;
+            }
+        }
+    }
+    /*Let's Get This Party Started part*/
+    .border{
+        background-image: url('Fireworks.png');
+        background-size: cover;
+        height: 170px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        h4{
+            color: white;
+            font-size: 44px;
+            font-weight: 500;
+            letter-spacing: 7px;
+        }
+    }
+    /*Contact Part of Part 5 of Home Page*/
+    .contact{
+        background-color: $lighergold;
+        height: 460px;
+        padding-right: 15%;
+        @media only screen and (max-width: 1430px) {padding-right:5%;}
+        .contact_content{
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 30px;
+            float: right;
+            h1{
+                color: $blue;
+                font-size: 38px;
+                font-weight: 300;
+                letter-spacing: 4px;
+            }
+            button{
+                width: 160px;
+                height: 35px;
+                background-color: $blue;
+                color: $white;
+                border: 1px solid $blue;
+                font-size: 14px;
+                letter-spacing: 1px;
+            }
+            button:hover{
+                background-color: $white;
+                color: $blue;
+            }
+        }
+    }
+}
+
+/*ABOUT PAGE*/
+/*Intro About Part*/
+.intro_about{
+    height: 560px;
+    background-color: $blue;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img{position: absolute;}
+    .balloon1{
+        transform: rotate(10deg);
+        right: 30em;
+        top: 2em;
+        animation-name: balloon_shake1;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+    }
+    @keyframes balloon_shake1{
+        0%{transform: rotate(-20deg);}
+        40%{transform: rotate(20deg);}
+        55%{transform: rotate(-70deg);}
+        90%{transform: rotate(30deg);}
+        100%{transform: rotate(10deg);}
+    }
+    .balloon2{
+        right: 5em;
+        top: 8em;
+        animation-name: balloon_shake2;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+    }
+    @keyframes balloon_shake2{
+        0%{transform: rotate(-30deg);}
+        37%{transform: rotate(10deg);}
+        60%{transform: rotate(-60deg);}
+        90%{transform: rotate(20deg);}
+        100%{transform: rotate(0deg);}
+    }
+    .balloon3{
+        transform: rotate(-70deg);
+        left: 21em;
+        bottom: 2em;
+        animation-name: balloon_shake3;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+    }
+    @keyframes balloon_shake3{
+        0%{transform: rotate(-40deg);} 
+        28%{transform: rotate(0deg);} 
+        65%{transform: rotate(-90deg);} 
+        90%{transform: rotate(10deg);} 
+        100%{transform: rotate(-70deg);} 
+    }
+    .balloon4{
+        left: 4em;
+        bottom: 10em;
+        animation-name: balloon_shake4;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+    }
+    @keyframes balloon_shake4{
+        0%{transform: rotate(-30deg);} 
+        40%{transform: rotate(10deg);} 
+        65%{transform: rotate(-80deg);} 
+        78%{transform: rotate(20deg);} 
+        100%{transform: rotate(0deg);} 
+    }
+    .balloon5{
+        transform: rotate(-60deg);
+        top: 4em;
+        left: 14em;
+        animation-name: balloon_shake5;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+    }
+    @keyframes balloon_shake5{
+        0%{transform: rotate(-90deg);}
+        32%{transform: rotate(-50deg);}
+        60%{transform: rotate(-140deg);} 
+        86%{transform: rotate(-40deg);} 
+        100%{transform: rotate(-60deg);} 
+    }
+    .balloon6{
+        transform: rotate(20deg);
+        bottom: 4em;
+        right: 11em;
+        animation-name: balloon_shake6;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+    }
+    @keyframes balloon_shake6{
+        0%{transform: rotate(-10deg);} 
+        30%{transform: rotate(30deg);} 
+        65%{transform: rotate(-60deg);} 
+        90%{transform: rotate(+40deg);} 
+        100%{transform: rotate(20deg);} 
+    }
+}
+/*Information Part of About Page*/
+.about_content{
+    height: 520px;
+    background-color: $white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 29px;
+    text-align: center;
+    h1{
+        color: $blue; 
+        font-size: 52px;
+    }
+    h2{
+        font-family: 'Verdana';
+        font-size: 17px;
+    }
+}
+/*Team Part of About Page*/
+.about_team{
+    background-color: $lighergold;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .text{
+        margin: 60px 0px 70px 0px;
+        h1{color: $blue;}
+    }
+    .team_grid{
+        width: 78%;
+        display: grid;
+        grid-template-areas: 
+        'a b c',
+        'd e f' ,
+        'g h i';
+        grid-template-rows: auto auto auto;
+        grid-template-columns: auto auto auto;
+        grid-gap: 80px 70px;
+        .team1{grid-area: "a";}
+        .team2{grid-area: "b";}
+        .team3{grid-area: "c";}
+        .team4{grid-area: "d";}
+        .team5{grid-area: "e";}
+        .team6{grid-area: "f";}
+        .team7{grid-area: "g";}
+        .team8{grid-area: "h";}
+        .team9{grid-area: "i";}
+        .team{
+            text-align: center;
+            img{
+                width: 240px;
+                height: 230px;
+                border: 1px solid $blue;
+                box-shadow: 2px 2px 5px $blue;
+            }
+            h3{
+                margin: 3px;
+                font-size: 21px;
+                font-weight: 600;
+            }
+            p{
+                color: $white;
+                font-family: 'Verdana';
+                font-size: 13px;
+                line-height: 19px;
+            }
+        }
+    }
+    .teams{
+        grid-area: "2";
+        width: 78%;
+        padding: 80px 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 35px;
+        text-align: center;
+        img{
+            width: 170px;
+            height: 220px;
+            border: 1px solid $blue;
+            box-shadow: 2px 2px 5px $blue;
+        }
+        h3{
+            margin: 3;
+            color: $white;
+            font-size: 20px;
+            font-weight: 500;
+            letter-spacing: 1px;
+        }
+    }
+}
+
+
+/*PLAN YOUR EVENT*/
+/*CSS for All Circle Images*/
+.circle_img{
+    width: 150px;
+    height:150px;
+    position: absolute;
+    border: 2px solid $lighergold;
+    border-radius: 50%;
+}
+/*Background Animation*/
+@keyframes background_animation{
+    0% {background-color:$blue;}
+    12% {background-image: url("https://www.colorhexa.com/003e52.png"); background-size: cover;}
+    20% {background-image: url("https://www.brides.com/thmb/NsGUXdN35x4bgYVe9HGmP5q5koA=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/fb-7bbe5fcf84904082b49005ccbf99a99b.jpg"); background-size: cover;}
+    40% {background-image: url("https://www.brides.com/thmb/NsGUXdN35x4bgYVe9HGmP5q5koA=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/fb-7bbe5fcf84904082b49005ccbf99a99b.jpg"); background-size: cover;}
+    50% {background-image: url("https://cdn.firstcry.com/education/2022/12/29111523/Birthday-Party-Theme-For-Girls.jpg"); background-size: cover;}
+    65% {background-image: url("https://cdn.firstcry.com/education/2022/12/29111523/Birthday-Party-Theme-For-Girls.jpg"); background-size: cover;}
+    75% {background-image: url("https://thepaintsesh.com/wp-content/uploads/2021/04/corporate-580e8bbf3df78c2c73adc69a-scaled.jpeg"); background-size: cover;}
+    85% {background-image: url("https://thepaintsesh.com/wp-content/uploads/2021/04/corporate-580e8bbf3df78c2c73adc69a-scaled.jpeg"); background-size: cover;}
+    100% {background-image: url("https://www.basinharbor.com/wp-content/uploads/2023/03/BH_North-Dock-CampfireNight-scaled-e1678478243785.jpg"); background-size: cover;}
+}
+/*First Part of Plan Your Event Page*/
+.intro_event{
+    background-color: $blue;
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    animation-name: background_animation;
+    animation-duration: 60s;
+    animation-iteration-count: infinite;
+    .intro_event_content{
+        width: 80%;
+        img{margin: auto auto auto -20px;}
+        h1{
+            margin-top: -20px;
+            color: $white;
+            font-family: "Verdana";
+            font-size: 30px;
+            letter-spacing: 0px;
+        }
+        hr{
+            width: 580px;
+            margin: 18px 3px;
+        }
+        h5{
+            font-size: 16px;
+            color: $white;
+        }
+    }
+    h4{
+        margin: 60px 0px 6px 0px;
+        color: $white;
+        font-family: 'Verdana';
+        font-size: 15px;
+    }
+}
+/*Second Part of Plan Your Event Page*/
+.event_body2{
+    background: linear-gradient(rgba(252,251,243,1) 0%, rgba(252,251,243,1) 35%, rgba(49,78,82,1) 75%, rgba(49,78,82,1) 100%);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 500px;
+    text-align: center;
+    h1{
+        margin: 40px auto 30px auto;
+        color: $blue;
+        font-size: 50px;
+        font-weight: 500;
+        letter-spacing: 2px;
+    }
+    /*Main Features Part*/
+    .main_features{
+        position: static;
+        display: flex;
+        gap: 170px;
+        .feature{
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .content{
+                width: 240px;
+                height: 320px;
+                background-color: #E7E6E1;
+                padding: 70px 10px 10px 10px;
+                margin-top: 90px;
+                display:flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                border: 1px solid black;
+                border-radius: 20px;
+                h3{
+                    height: 70px;
+                    margin-top: 10px;
+                    font-family: 'Verdana';
+                    font-size: 22px;
+                    font-weight: 700;
+                    line-height: 28px;
+                }
+                h5{
+                    width: 200px;
+                    font-family: 'Verdana';
+                    font-size: 13px;
+                    font-weight: 500;
+                    line-height: 18px;
+                }
+                h4{
+                    margin: 20px 0px;
+                    margin-bottom: 10px;
+                    color: $gold;
+                    font-family: 'Verdana';
+                    font-size: 13px;
+                    font-weight: 600;
+                }
+            }
+            .versatile{
+                h3{margin-top: 20px;}
+                h5{margin-top: -10px;}
+                h4{margin-top: 90px;}
+            }
+        }
+    }
+    /*The Middle Part, You are our Priority*/
+    .breakpoint{
+        position: absolute;
+        display:flex;
+        width: 84%;
+        margin-top: 150px;
+        margin-bottom: 100px;
+        .breakpoint_left{
+            background-color: $gold;
+            width: 55%;
+            border: 1px solid black;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            h1{
+                color: $blue;
+                line-height: 130px;
+                font-size: 56px;
+                font-weight: 800;
+                font-family: 'Verdana';
+                padding: 20px;
+                letter-spacing: 1px;
+            }
+        }   
+        .breakpoint_right{
+            background-color: $white;
+            width: 45%;
+            border: 1px solid black;
+            border-left: 0px;
+            display:flex;
+            flex-direction: column;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            padding: 20px 60px 50px 60px;
+            h1{
+                font-weight: normal;
+                font-size: 38px;
+                letter-spacing: 1px;
+            }
+            hr{
+                margin: 10px 0px 40px 0px;
+            }
+        }    
+    }
+    /*The Event Services Part*/
+    .event_services{
+        margin-bottom: 16px;
+        .service{
+            position: static;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding-top: 160px;
+            h1{
+                color: $gold;
+                margin: 30px 0px 10px 0px;
+            }
+            p{
+                color: $white;
+                margin-bottom: 50px;
+            }
+            .event_services_content{
+                display:flex;
+                gap: 7em;
+                .event_service{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 15px;
+                    h4{
+                        margin-bottom: 5px;
+                        color: $white;
+                        font-size: 21px;
+                    }
+                    img{
+                        border: 1px solid $silver;
+                        box-shadow: 2px 2px 7px $silver;
+                    }
+                    p{
+                        color: $gold;
+                        font-size: 50px;
+                        border: 0px;
+                    }
+                    p:hover{font-size: 58px;}
+                }
+                
+            }
+        }
+    }
+}
+/*Styling for All Event Packages*/
+.event_pack{
+    padding: 60px 100px;
+    border: 1px solid black;
+    border-right: 0px;
+    border-left: 0px;
+    h1{
+        color: $blue;
+        font-size: 38px;
+        font-weight: normal;
+        letter-spacing: 2px;
+    }
+    .corner_border{
+        position: relative;
+        margin: 26px;
+        padding: 4px 20px;
+        h4{
+            margin-bottom: 10px;
+            font-family: 'Verdana';
+            font-size: 18px;
+            line-height: 26px;
+        }
+        /*Code for the Corner Borders*/
+        &:before {
+            display: block;
+            content: "";
+            width: 40px;
+            height: 40px;
+            position: absolute;
+            bottom: -10px;
+            left: -10px;
+            border-bottom: 2px solid $gold;
+            border-left: 2px solid $gold;
+        }
+        &:after {
+            display: block;
+            content: "";
+            width: 40px;
+            height: 40px;
+            position: absolute;
+            top: -18px;
+            right: -10px;
+            border-top: 2px solid $gold;
+            border-right: 2px solid $gold;
+        }
+    }
+    .contact_us{
+        width: 100%;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+        p{
+            color: $gold;
+            font-family: 'Verdana';
+            font-style: italic;
+            font-weight: bold;
+        }
+        button{
+            height: 30px;
+            width: 180px;
+            background-color: #E7E6E1;
+            font-family: 'Verdana';
+            font-size: 18px;
+            border: 0px;
+        }
+    }
+}
+.event_pack_white{
+    background-color: $white;
+    .contact_us{
+        button:hover{
+            background-color:$blue;
+            color: $white;
+        }
+    }
+}
+.event_pack_silver{
+    background-color: #E7E6E1;
+    border-top: 0px;
+    .contact_us{
+        button{background-color: $white;}
+        button:hover{background-color: $gold;}
+    }
+}
+/*You have this part event services*/
+.have_event{
+    background-color: $blue;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h2{
+        margin: 20px;
+        color: $white;
+        font-size: 28px;
+    }
+    .have_event_content{
+        display: flex;
+        margin: 22px 0px;
+        gap: 100px;
+        .have{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .content{
+                width: 230px;
+                height: 300px;
+                background-color: $white;
+                margin: 90px 0px 15px 0px;
+                padding: 40px 10px 10px 10px;
+                display:flex;
+                flex-direction: column;
+                align-items: center;
+                border: 1px solid black;
+                border-radius: 20px;
+                box-shadow: 2px 2px 6px $silver;
+                text-align: center;
+                h3{
+                    height: 30px;
+                    margin: 36px 0px;
+                    color: $gold;
+                    font-size: 20px;
+                    letter-spacing: 2px;
+                }
+                h5{font-size: 16px;}
+                h6{
+                    margin-top: 40px;
+                    color: $blue;
+                    font-size: 20px;
+                    font-family: 'Verdana';
+                    font-weight: bold;
+                }
+                .h6{margin-top: 63px;}
+            }    
+        }
+    }
+}
+/*Last Part of Plan Your Event Page*/
+.event_bodylast{
+    background: linear-gradient($lighergold 0%, $lighergold 35%, $white 75%, $white 100%);
+    /*Two rectangle Last Minute Plan Prices*/
+    .last-minute{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        h1{
+            margin: 50px 0px 35px 20px;
+            color: $blue;
+            font-family:'Italianno';
+            font-size: 50px;
+            letter-spacing: 10px;
+            word-spacing: 15px;
+        }
+        .plans{
+            display: flex;
+            gap: 100px;
+            .MONTH, .WEEK{
+                width: 390px;
+                background-color: $blue;
+                padding: 5px;
+                border: 1px solid $white;
+                box-shadow: 1px 1px 3px $white;
+                .last_minute_content{
+                    margin: 20px 0px 10px 0px;
+                    text-align: center;
+                    color: $white;
+                    h1{
+                        margin-top: 16px;
+                        color: $white;
+                        font-family: 'Verdana';
+                        font-size: 56px;
+                        font-weight: bold;
+                        letter-spacing: 4px;
+                    }
+                    h2{
+                        margin-bottom: 26px;
+                        margin-top: -2px;
+                        font-size: 19px;
+                        font-family: 'Verdana';
+                        font-weight: bold;
+                        letter-spacing: 3px;
+                    }
+                    p{font-size: 16px;}
+                    .check{
+                        width:66%;
+                        margin: 30px auto 40px auto;
+                        display: grid;
+                        grid-template-columns: 15% 80%;
+                        text-align: left;
+                        gap: 17px;
+                        p{
+                            font-size: 26px;
+                            text-align: right;
+                        }
+                        h6{
+                            margin-top: 2px;
+                            font-size: 16px;
+                            font-weight: normal;
+                        }
+                    }
+                }
+                .starts_at{
+                    padding: 8px 0px;
+                    background-color: $white;
+                    width: 100%;
+                    display: flex;
+                    gap: 40px;
+                    justify-content: center;
+                    align-items: center;
+                    h3{
+                        color: black;
+                        font-family: 'Italianno';
+                        font-size: 48px;
+                        font-weight: 500;
+                        letter-spacing: 3px;
+                    }
+                    .starts_at_price{
+                        display: flex column;
+                        align-items: center;
+                        text-align: center;
+                        h2{font-size: 30px;}
+                        p{font-size: 14px;}
+                    }
+                }
+            }
+        }
+        .vertical_contact{
+            margin: 70px;
+            display: flex column;
+            align-items: center;
+            text-align: center;
+            h5{margin-bottom: 30px;}   
+            button{
+                height: 36px;
+                width: 180px;
+                border: 0px;
+                background-color: $blue;
+                color: $white;
+                font-size: 20px;
+                font-style: italic;
+            }
+            button:hover{
+                background: $white;
+                border: 1px solid $blue;
+                color: $blue;
+            }
+        }
+    }
+    /*Celebrate Part*/
+    .celebrate{
+        position: relative;
+        .celebrate_content{
+            width: 386px;
+            background-color: $white;
+            position: absolute; 
+            border: 1px solid black;
+            text-align: center;
+            bottom: 20%;
+            right: 18%;
+            z-index: 1;
+            h5{
+                margin: 16px 22px;
+                font-size: 18px;
+            }
+            .yellow_celebrate{
+                background-color: $lighergold;
+                display: flex column;
+                justify-content: center;
+                align-items: center;
+                .price{
+                    padding-top:10px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 30px;
+                    text-align: center;
+                    h3{
+                        color: black;
+                        font-family: 'Italianno';
+                        font-size: 38px;
+                        font-weight: 500;
+                        letter-spacing: 3px;
+                    }
+                    .starts_at_price{
+                        h2{
+                            font-size: 26px;
+                            letter-spacing: 1px;
+                        }
+                        p{
+                            color: black;
+                            font-size: 12px;
+                            letter-spacing: 0px;
+                        }
+                    }
+                }
+                p{
+                    margin-top: -6px;
+                    padding-bottom: 5px;
+                    font-size: 12px;
+                    color: $white;
+                }
+            }
+        }
+        img{
+            border: 1px solid black;
+            margin-bottom: 80px;
+        }
+        h4{
+            position: absolute;
+            color: $white;
+            font-family: 'URW Chancery L', cursive;
+            font-size: 40px;
+            letter-spacing: 8px;
+            line-height: 45px;
+            font-weight: bold;
+            -webkit-text-stroke-width: 1px;
+            -webkit-text-stroke-color: black;
+            transform: rotate(-6deg);
+            right: 21%;
+            top: 8%;
+            z-index: 2;
+        }
+        h4:hover{
+            font-size: 44px;
+            right: 20%;
+        }
+    }
+}
+
+
+/*LOGIN PAGE*/
+.login{
+    margin: 30px;
+    background-color: $blue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    img{
+        width: 23%;
+        height: 23%;
+        margin-bottom: -15px;
+        margin-top: -10px;
+    }
+    input, #email{
+        background-color: #CBCAC8;
+        height: 30px;
+        width: 340px;
+        margin-top:0px;
+        padding: 5px 10px;
+    }
+    #password{margin-top:6px;}
+    ::placeholder{
+        color: $white;
+    }
+    .checkbox{
+        width: 360px;
+        margin: 5px 10px;
+        display: flex;
+        justify-content: center;
+        input[type=checkbox]{
+            height: 18px;
+            width: 18px;
+            accent-color: #CBCAC8;
+        }
+        label{
+            margin: 0px auto 0px 10px;
+            font-size: 16px;
+            font-weight: normal;
+            color: #CBCAC8;
+        }
+    }
+    button{
+        height: 38px;
+        width: 360px;
+        background-color: $gold;
+        color: $white;
+        font-size: 20px;
+        border: 0px;
+    }
+    hr{
+        width: 360px;
+        margin: 0px;
+        border: 1px solid $white;
+    }
+    p{
+        width: 360px;
+        margin-top: 1px;
+        color: #CBCAC8;
+        font-weight: 100;
+    }
+    .account{
+        width: auto;
+        margin: 10px 0px 26px 0px;
+    }
+}
+.login2{
+    margin: 0px;
+    input, #fname, #lname, #email, #phone, #password, #confirm{
+        width: 360px;
+        margin: 0px 0px 10px 0px;
+    }
+    label[for=fname], label[for=lname], label[for=email], label[for=phone], label[for=password], label[for=confirm]{
+        margin: 0px;
+        color: $white;
+        font-weight: normal;
+    }
+    button{
+        width: 380px;
+        margin: 20px auto 60px auto;
+    }
+}
+
+/*Get in Touch Page*/
+.intro_getintouch{
+    height: 560px;
+    background-color: $blue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    color: $gold;
+    h1{
+        font-size: 33px;
+        font-weight: 500;
+        letter-spacing: 6px;
+    }
+    h4{letter-spacing: 2px;}
+}
+
+form{
+    margin: 40px 120px;
+    label, select, input{
+        font-weight: 500;
+    }
+    input{font-family:'Times New Roman';}
+    label{
+        color: #ef8b2d;
+        font-weight: 600;
+    }
+    select{
+        width: 100%;
+        font-size: 18px;
+        border: 0px;
+        border-bottom: 3px solid $blue;
+    }
+    input{
+        width: 100%;
+        font-size: 18px;
+        border: 0px;
+        border-bottom: 3px solid $blue;
+    }
+    #email, #phone_number, #first_name, #last_name{
+        width: 45%;
+        margin-top: 27px;
+    }
+    ::placeholder{
+        color: $silver;
+    }
+    #phone_number, #last_name{float: right;}
+    #first_name{margin-bottom: 27px;}
+    #venue{margin-bottom: 27px;}
+    #date{
+        width: 33%;
+        margin-bottom: 27px;
+    }
+    #guest, #guest_label{
+        width: 48%;
+        float: right;
+    }
+    input[type=radio], input[type=checkbox]{accent-color: $blue;}
+    #bday, #corporate, #public, #market, #wedding, #other, #rehearsal, #catering, #games, #nightpack, #schedule, #reservation, #host, #other2{
+        width: auto;
+        margin: 15px 0px 0px 10px;
+    }
+    label[for=bday], label[for=corporate], label[for=public], label[for=market], label[for=wedding], label[for=other], label[for=rehearsal], label[for=catering], label[for=games], label[for=nightpack], label[for=schedule], label[for=reservation], label[for=host], label[for=other2]{
+        color: $silver;
+    }
+    label[for=other] input, label[for=other2] input{
+        width:60%;
+        margin-bottom: 27px;
+        border-bottom: 1px solid $silver;
+    }
+    textarea{
+        width: 98%;
+        margin: 15px 0px 0px 20px;
+        border: 1px solid $blue;
+        border-radius: 10px;
+    }
+    p{
+        width: 94%;
+        margin: 15px auto;
+        font-size: 15px;
+        font-family: 'Verdana';
+        letter-spacing: 0px;
+        line-height: 17px;
+    }
+    .button{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        button{
+            width: 200px;
+            height: 36px;
+            background-color: $blue;
+            margin: 26px auto 5px auto;
+            font-size: 18px;
+            font-weight: 600;
+            letter-spacing: 1px;
+            color: $white;
+            border: 0px;
+            box-shadow: 2px 2px 5px $silver;
+            border-radius: 30px;
+        }
+        button:hover{background-color:$lighergold;}
+    }
+}

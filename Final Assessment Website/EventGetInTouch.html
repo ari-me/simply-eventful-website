@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Simply Eventful Get in Touch</title>
+        <link rel="stylesheet" type="text/css" href="SimplyEventful.css">
+        <link href='https://fonts.googleapis.com/css?family=Italiana' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Italianno' rel='stylesheet'>
+    </head>
+    <body>
+         <!--HEADER-->
+         <header>
+            <a href="EventHome.html"><img src="SimplyEventfulLogo.png" width="70px" height="70px"></a>
+            <div class="header_texts">
+                <a href="EventHome.html"><h3>HOME</h3></a>
+                <a href="EventAbout.html"><h3>ABOUT</h3></a>
+                <a href="EventGetInTouch.html"><h3 class="highlight_texts">GET IN TOUCH</h3></a>
+                <a href="EventPlanYourEvent.html"><h3>PLAN YOUR EVENT</h3></a>
+                <a href="prtfl-page.html"><h3>PORTFOLIO</h3></a>
+            </div>
+            <a href="http://localhost/Final%20Assessment%20Website/EventLogin.php"><button id="signup">SIGN UP!</button></a>
+        </header>
+
+        <!--Intro Page-->
+        <div class="intro_getintouch">
+            <img src="SimplyEventful.png" height="43%" width="36%">
+            <h1>GET IN TOUCH WITH US</h1>
+            <h4>Ready? Let's Get This Party Started!</h4>
+        </div>
+            
+        <!--FORMS-->
+        <form onsubmit="return postToGoogle();" action="" id="form">
+            <label for="Heard">Where did you hear about us?</label><br>
+            <select name="Heard" id="Heard">
+                <option disabled selected value></option>
+                <option value="Instagram">Instagram</option>
+                <option value="Facebook">Facebook</option>
+                <option value="Friend_Family">A friend or family</option>
+                <option value="Client">A Previous Client</option>
+                <option value="Employees">One of the Employees</option>
+            </select> <br>
+
+            <input type="text" id="email" name="email" placeholder="Email" required>
+            <input type="text" id="phone_number" name="phone_number" placeholder="Phone Number" required><br>
+            <input type="text" id="first_name" name="first_name" placeholder="First Name" required>
+            <input type="text" id="last_name" name="last_name" placeholder="Last Name" required><br>
+
+            <label for="venue">Have you reserved a venue yet? If so, enter venue name and location. If not, enter N/A.</label><br>
+            <input type="text" id="venue" name="venue" required><br>
+
+            <label for="date" id="date_label">Event Date:</label>
+            <label for="guest" id="guest_label">How many guests are you inviting?</label> <br>
+            <input type="date" id="date" name="date">
+            <input type="number" id="guest" name="guest"><br>
+                
+            <label for="celebrate">What are you celebrating?</label><br>
+            <input type="radio" id="bday" name="celebrate" value="bday">
+            <label for="bday"> Birthday Event</label><br>
+            <input type="radio" id="corporate" name="celebrate" value="corporate">
+            <label for="corporate"> Corporate Event</label><br>
+            <input type="radio" id="public" name="celebrate" value="public">
+            <label for="public"> Public Event</label><br>
+            <input type="radio" id="market" name="celebrate" value="market">
+            <label for="market"> Marketing Event</label><br>
+            <input type="radio" id="wedding" name="celebrate" value="wedding">
+            <label for="wedding"> Wedding</label><br>
+            <input type="radio" id="other" name="celebrate" value="other_reason">
+            <label for="other"> Other: <input type="text" name="other_reason1" id="other_reason1"/></label><br>
+
+            <label for="services">What additional service can we provide for you (other than planning) that you are interested in?</label><br>
+            <input type="checkbox" id="rehearsal" name="rehearsal" value="rehearsal"> 
+            <label for="rehearsal"> Rehearsal Dinner Planning</label><br>
+            <input type="checkbox" id="catering" name="catering" value="catering">
+            <label for="catering"> Food Catering</label><br>
+            <input type="checkbox" id="games" name="games" value="games">
+            <label for="games"> Games and Entertainnment</label><br>
+            <input type="checkbox" id="nightpack" name="nightpack" value="nightpack">
+            <label for="nightpack"> End of Night Pack</label><br>
+            <input type="checkbox" id="schedule" name="schedule" value="schedule">
+            <label for="schedule"> Planning of Schedule</label><br>
+            <input type="checkbox" id="reservation" name="reservation" value="reservation">
+            <label for="reservation"> Venue Reservation</label><br>
+            <input type="checkbox" id="host" name="host" value="host">
+            <label for="host"> Host</label><br>
+            <input type="checkbox" id="other2" name="other_reason" value="other_reason">
+            <label for="other2"> Other: <input type="text" name="other_reason2" id="other_reason2"/></label><br>
+
+            <label for="assistanece">How can we help you the most?</label><br>
+            <textarea id="assistanece" name="assistanece" rows="12" cols="130"></textarea>
+
+            <p>By submitting this contact form, your information will be shared with us and you will consent to using
+                this information to correspond with you and send you email marketing communications. For more information,
+                please refer to the Privacy Policy and Terms of Service applied.</p>
+            <div class="button">
+                <button>SUBMIT</button>
+            </div>
+        </form>
+
+        <!--FOOTER-->
+        <div class="parallax">
+            <div class="text">
+                <h2>Follow Our Socials for Updates!</h2>
+            </div>
+            <img src="marketing_team.png">
+            <img src="MarinaCorporate.png">
+            <img src="SaadiyatWedding.jpg">
+            <img src="people1.jpg">
+            <img src="decoration_team.jpg">
+            <img src="have_entertainment.jpg">
+            <img src="UmmAlEmaratBirthday.jpg">  
+            <img src="flowers.png">
+            <img src="planning_team.jpg">
+            <img src="AquariumBirthday.jpg">
+            <img src="HomeComfortEvent.jpg">
+            <img src="plan_experience.jpg">
+            <img src="public_event.jpg">
+            <img src="have_food.jpg">
+        </div>
+        <footer>
+            <div class="left_footer">
+                <a href="EventHome.html"><h3>HOME</h3></a>
+                <a href="EventAbout.html"><h3>ABOUT</h3></a>
+                <a href="EventGetInTouch.html"><h3>GET IN TOUCH</h3></a>
+                <a href="EventPlanYourEvent.html"><h3>PLAN YOUR EVENT</h3></a>
+                <a href="prtfl-page.html"><h3>PORTFOLIO</h3></a>
+            </div>
+            <div class="mid_footer">
+                <img src="SimplyEventfulLogo.png" width="240px" height="240px">
+                <h4>Let's make your event dreams come true!</h4>
+                <div class="socials">
+                    <a href="https://www.instagram.com/"><img src="insta_black.png" class="instagram"></a>
+                    <a href="https://www.facebook.com/"><img src="facebook_black.png" class="facebook"></a>
+                    <a href="https://mail.google.com/mail/u/0/#inbox"><img src="gmail_black.png" class="gmail"></a>
+                </div>
+            </div>
+            <div class="right_footer">
+                <p>&nbsp;&nbsp;Interested?</p>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Have questions?</p>
+                <p>Need some help?</p>
+                <a href="EventGetInTouch.html"><button>Contact Us</button></a>
+            </div>
+        </footer>
+        <!--Script sending User Input to Google Spreadsheets-->
+        <script type="text/javascript" language="javascript">
+            const form = document.querySelector("#form")
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbzkGSt85CvlYfNwUoZ7v6ixk8XyHRyaiRDq1cJoCy2QAxUXvnO4-Ymek0Ve-JKlTt6v/exec'
+
+            form.addEventListener('submit', e => {
+                e.preventDefault()
+
+                const responseBody = new FormData(form)
+                fetch(scriptURL, { method: 'POST', body: responseBody })
+                alert('We have received your file! We will contact you as soon as we can.');
+                return false;
+            })
+        </script>
+    </body>
+</html>

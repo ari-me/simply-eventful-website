@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: #314E52;
+        }
+
+        hr {
+            border: 1px #db9f55 solid;
+        }
+
+        .hero {
+            background-color: #6e6e6e;
+            background-blend-mode: multiply;
+            background-image: url(body1_background.jpg);
+            background-position: 20% 20%;
+            background-attachment: fixed;
+            background-size: cover;
+            padding: 15vh 5vw;
+            text-align: center;
+        }
+
+        .hero hr {
+            margin: 0 26em;
+        }
+
+        .p1 {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2);
+            margin: 5rem 6rem;
+            grid-gap: 3rem 6rem;
+        }
+
+        .selection {
+            display: flex;
+            flex-direction: column;
+            background-color: #fff;
+            border: 2px #141414 solid;
+            text-align: center;
+            box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.658);
+        }
+
+        .selection hr {
+            width: 50%;
+            margin: 1em auto;
+        }
+
+        .rev {
+            flex-direction: column-reverse;
+        }
+
+        .sel-text {
+            padding: 2em 4em;
+        }
+
+        .sel-text .section-title {
+            color: #000;
+            margin-top: 1em;
+            padding: 0;
+            font-weight: 500;
+        }
+
+        .view-gallery {
+            color: #314E52;
+            font-weight: bold;
+            font-style: italic;
+            font-size: 1.1em;
+        }
+
+        .section-title {
+            color: #fff;
+            font-size: 1.6em;
+            line-height: 1.3;
+        }
+
+        .view-gallery, .section-title {
+            font-family: "Inter", sans-serif;
+        }
+        
+        .break {
+            background-attachment: fixed;
+            background-position: 70%;
+            background-size: cover;
+            padding: 10vh 18vw;
+            text-align: center;
+            border-top: 2px #141414 solid;
+            border-bottom: 2px #141414 solid;
+        }
+
+        .b1 {
+            background-image: url(ADNECComicCon.jpg);
+        }
+
+        .b2 {
+            background-image: url(HomeComfortEvent.jpg);
+        }
+
+        .br-text {
+            font-family: "Italianno", sans-serif;
+            font-size: 5em;
+            color: #fff;
+            background-color: #18323598;
+            padding: 0.8em 0.6em 0.6em;
+            line-height: 1.3;
+        }
+
+        .parallax {
+            margin: 1em 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="EventHome.html"><img src="SimplyEventfulLogo.png" width="70px" height="70px"></a>
+        <div class="header_texts">
+            <a href="EventHome.html"><h3>HOME</h3></a>
+            <a href="EventAbout.html"><h3>ABOUT</h3></a>
+            <a href="EventGetInTouch.html"><h3 class="highlight_texts">GET IN TOUCH</h3></a>
+            <a href="EventPlanYourEvent.html"><h3>PLAN YOUR EVENT</h3></a>
+            <a href="prtfl-page.html"><h3>PORTFOLIO</h3></a>
+            <a href="http://localhost/Final%20Assessment%20Website/EventLogin.php" class="button" id="signup">SIGN UP!</a>
+        </div>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="hero__portfolio">
+                <img src="logo-glow.png" alt="">
+                <hr>
+                <p class="section-title">View the events we've successfully<br>planned and executed from the<br>beginning to now!</h2>
+            </div>
+
+        </section>
+        <section class="p1">
+            <div class="selection">
+                <img src="SaadiyatWedding.png" style="width: 100%;" class="sel-img">
+                <div class="sel-text">
+                <p class="section-title">Saadiyat Island Beach Wedding</p>
+                <hr>
+                <a href="" class="view-gallery">View Gallery</a>
+                </div>
+            </div>
+            <div class="selection rev">
+                <img src="JumeirahCorporate.png" style="width: 100%;" class="sel-img">
+                <div class="sel-text">
+                <p class="section-title">Jumeirah Creekside Hotel Corporate Event</p>
+                <hr>
+                <a href="" class="view-gallery">View Gallery</a>
+                </div>
+            </div>
+            <div class="selection">
+                <img src="AserkalAvenye.png" style="max-width: 100%;" class="sel-img">
+                <div class="sel-text">
+                <p class="section-title">Alserkal Avenue Birthday Party</p>
+                <hr>
+                <a href="" class="view-gallery">View Gallery</a>
+                </div>
+            </div>
+            <div class="selection rev">
+                <img src="RabdanService.png" style="max-width: 100%;" class="sel-img">
+                <div class="sel-text">
+                <p class="section-title">Rabdan Academy Public Service Event</p>
+                <hr>
+                <a href="" class="view-gallery">View Gallery</a>
+                </div>
+            </div>
+            <div class="selection">
+                <img src="ManaratAlSaadiyat.png" style="max-width: 100%;" class="sel-img">
+                <div class="sel-text">
+                <p class="section-title">Manarat Al Saadiyat Public Event</p>
+                <hr>
+                <a href="" class="view-gallery">View Gallery</a>
+                </div>
+            </div>
+            <div class="selection rev">
+                <img src="MarinaCorporate2.png" style="max-width: 100%;" class="sel-img">
+                <div class="sel-text">
+                <p class="section-title">Yas Marina Circuit Corporate Event</p>
+                <hr>
+                <a href="" class="view-gallery">View Gallery</a>
+                </div>
+            </div>
+        </section>
+        <section class="break b1">
+            <p class="br-text">ADNEC Comic Con Public Event</p>
+        </section>
+        <section class="p1">
+            <div class="selection rev">
+                <img src="Corniche2.png" style="max-width: 100%;" class="sel-img">
+                <div class="sel-text" >
+                <p class="section-title">Corniche Beach Birthday Party</p>
+                <hr>
+                <a href="" class="view-gallery">View Gallery</a>
+                </div>
+            </div>
+            <div class="selection">
+                <img src="UmmAlEmaratBirthday.png" style="max-width: 100%;" class="sel-img">
+                <div class="sel-text">
+                <p class="section-title">Umm Al Emarat Park Birthday Event</p>
+                <hr>
+                <a href="" class="view-gallery">View Gallery</a>
+                </div>
+            </div>
+            <div class="selection rev">
+                <img src="AnantaraCorporate2.png" style="max-width: 100%;" class="sel-img">
+                <div class="sel-text">
+                <p class="section-title">Anantara Eastern Mangroves Corporate Hangout</p>
+                <hr>
+                <a href="" class="view-gallery">View Gallery</a>
+                </div>
+            </div>
+            <div class="selection">
+                <img src="AquariumBirthday.jpg" style="max-width: 100%;" class="sel-img">
+                <div class="sel-text">
+                <p class="section-title">AUH National Aquarium Birthday Party</p>
+                <hr>
+                <a href="" class="view-gallery">View Gallery</a>
+                </div>
+            </div>
+            <div class="selection rev">
+                <img src="LouvreSchool.png" style="max-width: 100%;" class="sel-img">
+                <div class="sel-text" style="padding-top: 0;">
+                <p class="section-title">Louvre School Event</p>
+                <hr>
+                <a href="" class="view-gallery">View Gallery</a>
+                </div>
+            </div>
+            <div class="selection">
+                <img src="MarinaBoat.png" style="max-width: 100%;" class="sel-img">
+                <div class="sel-text">
+                <p class="section-title">Marina Mall Boat Birthday Party</p>
+                <hr>
+                <a href="" class="view-gallery">View Gallery</a>
+                </div>
+            </div>
+        </section>
+        <section class="break b2" style="padding: 10vh 26vw;">
+            <p class="br-text">Events in the comfort of your home</p>
+        </section>
+    </main>
+    <div class="parallax">
+        <div class="text">
+            <h2>Follow Our Socials for Updates!</h2>
+        </div>
+        <img src="marketing_team.png">
+        <img src="MarinaCorporate.png">
+        <img src="SaadiyatWedding.jpg">
+        <img src="people1.jpg">
+        <img src="decoration_team.jpg">
+        <img src="have_entertainment.jpg">
+        <img src="UmmAlEmaratBirthday.jpg">
+        <img src="flowers.png">
+        <img src="planning_team.jpg">
+        <img src="AquariumBirthday.jpg">
+        <img src="HomeComfortEvent.jpg">
+        <img src="plan_experience.jpg">
+        <img src="public_event.jpg">
+        <img src="have_food.jpg">
+    </div>
+
+    <footer>
+        <div class="left_footer">
+            <a href="EventHome.html"><h3>HOME</h3></a>
+            <a href="EventAbout.html"><h3>ABOUT</h3></a>
+            <a href="EventGetInTouch.html"><h3>GET IN TOUCH</h3></a>
+            <a href="EventPlanYourEvent.html"><h3>PLAN YOUR EVENT</h3></a>
+            <a href="prtfl-page.html"><h3>PORTFOLIO</h3></a>
+        </div>
+
+        <div class="mid_footer">
+            <img src="SimplyEventfulLogo.png" width="240px" height="240px">
+            <h4>Let's make your event dreams come true!</h4>
+            <div class="socials">
+                <a href="instagram.com"><img src="insta_black.png"></a>
+                <a href="https://www.facebook.com/"><img src="facebook_black.png"></a>
+                <a href="https://mail.google.com/mail/u/0/#inbox"><img src="gmail_black.png"></a>
+            </div>
+        </div>
+
+        <div class="right_footer">
+            <p>&nbsp;&nbsp;Interested?</p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Have questions?</p>
+            <p>Need some help?</p>
+            <a href="#" class="button-contact">Contact Us</a>
+        </div>
+    </footer>
+</body>
+</html>

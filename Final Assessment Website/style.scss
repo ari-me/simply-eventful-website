@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Italiana&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Italianno&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+$white: #FCFBF4;
+$gold: #F2A154;
+$lighergold: #db9f55;
+$blue: #314E52;
+$silver: #a6a49d;
+
+body {
+    margin: 0;
+}
+
+h2 {
+    font-size: 20px;
+    font-weight: 100;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+h4 {
+    font-family: 'Italianno';
+    font-weight: normal;
+    font-size: 23px;
+}
+
+h6, p {
+    font-family: "Times New Roman", Times, serif;
+}
+
+p {
+    font-size: 20px;
+    letter-spacing: 1px;
+    line-height: 23px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+header {
+    background-color: $white;
+    width:100%;
+    display: inline-flex;
+    align-items: center;
+
+    img {
+        margin: 0px 12px;
+    }
+
+    .header_texts {
+        color: #000;
+        font-family: "Italiana", sans-serif;
+        margin: 0px 60px 0px auto;
+        display: flex;
+        flex-direction: row;
+        gap: 110px;
+        align-items: center;
+
+        .button {
+            width:100px;
+            height:26px;
+            font-size: 16px;
+            font-weight: bold;
+            color:white;
+            background-color: $blue;
+            border-radius:20px;
+            margin-left: 30px;
+            text-align: center;
+            padding-top: 0.5em;
+        }
+
+        h3 {
+            color: #233a3d;
+            font-size: 18px;
+        }
+
+        .highlight_texts {
+            color: $lighergold;
+        }
+
+        .button:hover {
+            background-color: $lighergold;
+            font-size: 17px;
+          }
+
+        h3:hover {
+            color: $lighergold;
+        }
+    }
+}
+
+.parallax {
+    position: relative;
+    overflow: hidden;
+    background-color: $blue;
+    background-repeat: repeat-x;
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    img {
+        height: 90%;
+        width: 125px;
+    }
+
+    .text {
+        position: absolute;
+        background-color: rgba(219, 159, 85, 0.644);
+        width: 390px;
+        height: 30px;
+        padding: 0.5em;
+
+        h2 {
+            font-weight: normal;
+            font-size: 28px;
+            color: $white;
+            margin: 0;
+        }
+    }
+}
+
+footer {
+    display:flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 30px 80px;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    background-color: $white;
+
+    .left_footer {
+        font-family: "Italiana", sans-serif; 
+        border-right: 3px solid $gold;
+        height: 260px;
+        padding-right: 170px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        h3 {
+            color: #233a3d;
+            font-size: 18px;
+            margin: 12px 0;
+        }
+    }
+
+    .mid_footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0px 60px;
+
+        h4 {
+            margin-top: -20px;
+            margin-bottom: 8px;
+            font-size: 26px;
+            letter-spacing: 1px;
+            font-weight: 500;
+        }
+
+        .socials {
+            display: flex;
+            flex-direction: row;
+            gap: 70px;
+
+            img {
+                width: 32px;
+            }
+        }
+    }
+
+    .right_footer{
+        border-left: 3px solid $gold;
+        height: 260px;
+        padding-left: 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        p {
+            margin: 0;
+            font-family: 'Italianno';
+            font-weight: 400;
+            font-size: 30px;
+        }
+
+        .button-contact {
+            font-family: "Italiana", sans-serif;
+            margin-top: 50px;
+            background-color: $blue;
+            color: $white;
+            width: 150px;
+            padding: 9px 0;
+            border: 1px solid $blue;
+            font-size: 14px;
+            letter-spacing: 1px;
+            font-weight: 600;
+            text-align: center;
+        }
+    }
+}
